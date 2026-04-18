@@ -1,0 +1,21 @@
+RewriteEngine On
+
+# 1. Forzar HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+# 2. Redirigir index.html a /inicio
+RewriteCond %{THE_REQUEST} \s/index\.html [NC]
+RewriteRule ^index\.html$ /inicio [R=301,L]
+
+# 3. Redirigir archivos .html a sin extensión (externo)
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+# 4. Reescribir /inicio a index.html (interno)
+RewriteRule ^inicio/?$ index.html [L]
+
+# 5. Reescribir URL limpia a archivo .html (interno)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^([^/]+)/?$ $1.html [L]

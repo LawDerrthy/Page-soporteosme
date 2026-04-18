@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Soporte OSME - Despacho Contable en Santa Catarina, Nuevo León | Contabilidad y Asesoría Fiscal</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Soporte OSME - Despacho contable profesional en Santa Catarina, Nuevo León. Servicios de contabilidad, asesoría fiscal, declaraciones y gestión SAT. Más de 10 años de experiencia.">
+  <meta name="keywords"
+    content="despacho contable, soporte osme, contabilidad, asesoría fiscal, declaraciones fiscales, santa catarina, nuevo león, contador público, servicios contables">
+  <meta name="author" content="Soporte OSME">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Soporte OSME - Despacho Contable Profesional">
+  <meta property="og:description"
+    content="Despacho contable en Santa Catarina, Nuevo León. Servicios de contabilidad y asesoría fiscal profesional.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.soporteosme.com">
+  <meta property="og:image" content="img/Logo.png?v=4">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Soporte OSME - Despacho Contable">
+  <meta name="twitter:description"
+    content="Despacho contable profesional en Santa Catarina, Nuevo León. Contabilidad y asesoría fiscal.">
+
+  <link rel="icon" href="img/Logo.png?v=4" type="image/png" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/custom.css" />
+
+  <!-- EmailJS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <!-- Google reCAPTCHA -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AccountingService",
+    "name": "Soporte OSME",
+    "description": "Despacho contable profesional en Santa Catarina, Nuevo León",
+    "url": "https://soporteosme.com",
+    "logo": "img/Logo.png?v=4",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Santa Catarina",
+      "addressRegion": "Nuevo León",
+      "addressCountry": "MX"
+    },
+    "serviceType": ["Contabilidad", "Asesoría Fiscal", "Declaraciones Fiscales", "Gestión SAT"],
+    "areaServed": "México",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Servicios Contables",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Contabilidad General"
+          }
+        }
+      ]
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-danger fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-white" href="#inicio">
+        <img src="img/Logo.png?v=4" alt="Logo Soporte OSME" width="40" height="40" class="me-2">
+        Soporte OSME
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-white" href="#nosotros">Quiénes somos</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#clientes">Clientes que confían</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#redes-sociales">Redes Sociales</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="inicio" class="hero-section d-flex align-items-center">
+    <div class="container text-center">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <img src="img/Logo.png?v=4" alt="Logo Soporte OSME - Despacho Contable" class="mb-4" width="120"
+            style="border-radius: 50%;">
+          <h1 class="display-4 fw-bold text-danger mb-3">Soporte OSME - Contadores Publicos</h1>
+          <p class="lead text-secondary mb-4">Despacho contable profesional en Santa Catarina, Nuevo León. Servicios de
+            contabilidad, asesoría fiscal y gestión SAT con más de 10 años de experiencia.</p>
+          <button class="btn btn-danger btn-lg px-5" data-bs-toggle="modal"
+            data-bs-target="#contactModal">Contáctanos</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quiénes somos -->
+  <section id="nosotros" class="py-5 bg-white">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h2 class="text-danger fw-bold mb-4">Quiénes somos</h2>
+          <p class="text-secondary lead mb-4">
+            En Soporte OSME nos especializamos en brindar soluciones contables, fiscales y administrativas
+            para empresas y emprendedores. Nuestro compromiso es ayudarte a mantener tus finanzas en orden
+            y cumplir con tus obligaciones ante las autoridades fiscales mediante servicios profesionales
+            y de calidad.
+          </p>
+          <div class="row g-3">
+            <div class="col-6">
+              <div class="d-flex align-items-center">
+                <i class="bi bi-check-circle-fill text-danger me-2"></i>
+                <span class="text-secondary">Experiencia comprobada</span>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="d-flex align-items-center">
+                <i class="bi bi-check-circle-fill text-danger me-2"></i>
+                <span class="text-secondary">Atención personalizada</span>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="d-flex align-items-center">
+                <i class="bi bi-check-circle-fill text-danger me-2"></i>
+                <span class="text-secondary">Cumplimiento fiscal</span>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="d-flex align-items-center">
+                <i class="bi bi-check-circle-fill text-danger me-2"></i>
+                <span class="text-secondary">Tecnología avanzada</span>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="d-flex align-items-center">
+                <i class="bi bi-check-circle-fill text-danger me-2"></i>
+                <span class="text-secondary">Con 10 años de experiencia</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="bg-light p-5 rounded-3">
+            <h4 class="text-danger mb-3">Nuestra Misión</h4>
+            <p class="text-secondary">
+              Proporcionar servicios contables y fiscales de alta calidad,
+              contribuyendo al éxito y crecimiento de nuestros clientes a través
+              de soluciones integrales y asesoría profesional.
+            </p>
+          </div>
+          <div class="bg-light p-5 rounded-3 mt-4">
+            <h4 class="text-danger mb-3">Nuestra Visión</h4>
+            <p class="text-secondary mb-3">
+              Ser un despacho reconocido a nivel nacional innovando estrategias fiscales no agresivas y mejorando la
+              experiencia de trato con el cliente con el objetivo de ser la herramienta con mayor valor a la mano.
+            </p>
+            <p class="text-secondary mb-0">
+              Establecer un vínculo inquebrantable entre el fomento al pago de contribuciones justo y no en exceso.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="text-danger fw-bold">Nuestros Servicios</h2>
+        <p class="text-secondary lead">Soluciones integrales para tu empresa</p>
+      </div>
+
+      <div class="row g-4" id="servicesContainer">
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card bg-white p-4 rounded-3 h-100 shadow-sm" data-bs-toggle="modal"
+            data-bs-target="#serviceModal1" style="cursor: pointer;">
+            <div class="service-icon mb-3">
+              <i class="bi bi-calculator text-danger"></i>
+            </div>
+            <h5 class="text-danger fw-bold mb-3">Contabilidad General</h5>
+            <p class="text-secondary">
+              Contabilidad general y financiera, elaboración de estados financieros
+              y análisis de la situación económica de tu empresa.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card bg-white p-4 rounded-3 h-100 shadow-sm" data-bs-toggle="modal"
+            data-bs-target="#serviceModal2" style="cursor: pointer;">
+            <div class="service-icon mb-3">
+              <i class="bi bi-file-earmark-text text-danger"></i>
+            </div>
+            <h5 class="text-danger fw-bold mb-3">Declaraciones Fiscales</h5>
+            <p class="text-secondary">
+              Declaraciones fiscales mensuales y anuales, presentación de impuestos
+              y cumplimiento de obligaciones fiscales.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card bg-white p-4 rounded-3 h-100 shadow-sm" data-bs-toggle="modal"
+            data-bs-target="#serviceModal3" style="cursor: pointer;">
+            <div class="service-icon mb-3">
+              <i class="bi bi-graph-up text-danger"></i>
+            </div>
+            <h5 class="text-danger fw-bold mb-3">Asesoría Fiscal</h5>
+            <p class="text-secondary">
+              Asesoría fiscal y financiera, planeación tributaria y optimización
+              de la estructura fiscal de tu empresa.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card bg-white p-4 rounded-3 h-100 shadow-sm" data-bs-toggle="modal"
+            data-bs-target="#serviceModal4" style="cursor: pointer;">
+            <div class="service-icon mb-3">
+              <i class="bi bi-people text-danger"></i>
+            </div>
+            <h5 class="text-danger fw-bold mb-3">Nóminas y Personal</h5>
+            <p class="text-secondary">
+              Manejo de nóminas, cálculo de prestaciones, gestión de personal
+              y cumplimiento de obligaciones laborales.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card bg-white p-4 rounded-3 h-100 shadow-sm" data-bs-toggle="modal"
+            data-bs-target="#serviceModal5" style="cursor: pointer;">
+            <div class="service-icon mb-3">
+              <i class="bi bi-building text-danger"></i>
+            </div>
+            <h5 class="text-danger fw-bold mb-3">Gestión SAT e IMSS</h5>
+            <p class="text-secondary">
+              Gestiones ante el SAT e IMSS, trámites administrativos y
+              representación fiscal de tu empresa.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card bg-white p-4 rounded-3 h-100 shadow-sm" data-bs-toggle="modal"
+            data-bs-target="#serviceModal6" style="cursor: pointer;">
+            <div class="service-icon mb-3">
+              <i class="bi bi-shield-check text-danger"></i>
+            </div>
+            <h5 class="text-danger fw-bold mb-3">Auditoría y Control</h5>
+            <p class="text-secondary">
+              Auditoría interna, control de procesos contables e
+              implementación de sistemas de control interno.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Speech Bubble Tooltip -->
+      <div class="d-flex justify-content-center my-4">
+        <div id="serviceSpeechBubble" class="service-tooltip" style="display: none;">
+          <div class="speech-bubble-content">
+            <button onclick="this.closest('#serviceSpeechBubble').style.display='none'"
+              class="speech-close-btn">×</button>
+            <i class="bi bi-hand-index-thumb-fill mb-2" style="font-size: 2.5rem; color: #dc3545;"></i>
+            <p>¡Presióname para ver más!</p>
+          </div>
+          <div class="speech-bubble-arrow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clientes Estrella -->
+  <section id="clientes" class="py-5 bg-white">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="text-danger fw-bold">Empresas que confían en nuestros servicios</h2>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="client-card d-block text-decoration-none">
+            <div class="bg-light p-4 rounded-3 text-center h-100 shadow-sm hover-shadow">
+              <div class="client-logo mb-3">
+                <img src="img/Logo-Voxoy.jpg" alt="Cliente 1" class="img-fluid" style="max-width: 80px; height: auto;">
+              </div>
+              <h6 class="text-danger fw-bold mb-0">Voxoy</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="client-card d-block text-decoration-none">
+            <div class="bg-light p-4 rounded-3 text-center h-100 shadow-sm hover-shadow">
+              <div class="client-logo mb-3">
+                <img src="img/Logo-Ruge.jpg" alt="Cliente 2" class="img-fluid" style="max-width: 80px; height: auto;">
+              </div>
+              <h6 class="text-danger fw-bold mb-0">Ruge Estudio</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="client-card d-block text-decoration-none">
+            <div class="bg-light p-4 rounded-3 text-center h-100 shadow-sm hover-shadow">
+              <div class="client-logo mb-3">
+                <img src="img/Logo-JAMH.jpg" alt="Cliente 3" class="img-fluid" style="max-width: 80px; height: auto;">
+              </div>
+              <h6 class="text-danger fw-bold mb-0">J.A.M.H Logistica</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="client-card d-block text-decoration-none">
+            <div class="bg-light p-4 rounded-3 text-center h-100 shadow-sm hover-shadow">
+              <div class="client-logo mb-3">
+                <img src="img/Logo-SAPCO.jpg" alt="Cliente 4" class="img-fluid" style="max-width: 80px; height: auto;">
+              </div>
+              <h6 class="text-danger fw-bold mb-0">SAPCO</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="client-card d-block text-decoration-none">
+            <div class="bg-light p-4 rounded-3 text-center h-100 shadow-sm hover-shadow">
+              <div class="client-logo mb-3">
+                <img src="img/Logo-Viridiana.jpg" alt="Cliente 5" class="img-fluid"
+                  style="max-width: 80px; height: auto;">
+              </div>
+              <h6 class="text-danger fw-bold mb-0">Viridiana Soltero Broker Inmobiliario</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="client-card d-block text-decoration-none">
+            <div class="bg-light p-4 rounded-3 text-center h-100 shadow-sm hover-shadow">
+              <div class="client-logo mb-3">
+                <img src="img/Logo-FC.jpg" alt="Cliente 6" class="img-fluid" style="max-width: 80px; height: auto;">
+              </div>
+              <h6 class="text-danger fw-bold mb-0">FC Agecy</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="client-card d-block text-decoration-none">
+            <div class="bg-light p-4 rounded-3 text-center h-100 shadow-sm hover-shadow">
+              <div class="client-logo mb-3">
+                <img src="img/Logo-CECR.jpg" alt="Cliente 7" class="img-fluid" style="max-width: 80px; height: auto;">
+              </div>
+              <h6 class="text-danger fw-bold mb-0">Carolina Esquivel Climas y Refacciones</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="client-card d-block text-decoration-none">
+            <div class="bg-light p-4 rounded-3 text-center h-100 shadow-sm hover-shadow">
+              <div class="client-logo mb-3">
+                <img src="img/Logo-JM.jpg" alt="Cliente 8" class="img-fluid" style="max-width: 80px; height: auto;">
+              </div>
+              <h6 class="text-danger fw-bold mb-0">JM Servicios Industriales</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal para Servicio 1: Contabilidad General -->
+  <div class="modal fade" id="serviceModal1" tabindex="-1" aria-labelledby="serviceModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-danger text-white">
+          <h5 class="modal-title" id="serviceModal1Label">
+            <i class="bi bi-calculator me-2"></i>Contabilidad General
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <h5 class="text-danger fw-bold mb-3">¿Qué incluye este servicio?</h5>
+            <ul class="list-unstyled">
+              <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Registro contable de todas las operaciones
+              </li>
+              <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Elaboración de estados financieros (Balance
+                General, Estado de Resultados)</li>
+              <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Análisis financiero de la situación económica
+              </li>
+              <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Conciliaciones bancarias mensuales</li>
+              <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Control de inventarios y cuentas por
+                pagar/cobrar</li>
+              <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Preparación de reportes contables
+                personalizados</li>
+            </ul>
+          </div>
+          <div class="mb-3">
+            <h5 class="text-danger fw-bold mb-3">Beneficios</h5>
+            <p class="text-secondary">Mantén un registro preciso de tus operaciones y conoce en tiempo real la situación
+              financiera de tu empresa para tomar mejores decisiones de negocio.</p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-danger btn-solicitar-info" data-service="Declaraciones Fiscales"
+            data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#contactModal">Solicitar información</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal para Servicio 2: Declaraciones Fiscales -->
+  <div class="modal fade" id="serviceModal2" tabindex="-1" aria-labelledby="serviceModal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-danger text-white">
+          <h5 class="modal-title" id="serviceModal2Label">
+            <i class="bi bi-file-earmark-text me-2"></i>Declaraciones Fiscales
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <h5 class="text-danger fw-bold mb-3">¿Qué incluye este servicio?</h5>
+            <ul class="list-unstyled">
+              <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Declaraciones mensuales de ISR, IVA y DIMM
+              </li>
+              <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Declaraciones anuales y cálculos de fin de
+                ejercicio</li>
+              <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Cumplimiento de obligaciones fiscales</li>
+              <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Determinación del Impuesto sobre la Renta
+                (ISR)</li>
+              <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Gestión de devoluciones y compensaciones</li>
+              <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Atención y seguimiento de requerimientos
+                fiscales</li>
+            </ul>
+          </div>
+          <div class="mb-3">
+            <h5 class="text-danger fw-bold mb-3">Beneficios</h5>
+            <p class="text-secondary">Cumple con todas tus obligaciones fiscales de manera puntual y evita multas,
+              recargos y sanciones por parte del SAT.</p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-danger btn-solicitar-info" data-service="Asesoría Fiscal"
+            data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#contactModal">Solicitar información</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal para Servicio 3: Asesoría Fiscal -->
+  <div class="modal fade" id="serviceModal3" tabindex="-1" aria-labelledby="serviceModal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-danger text-white">
+          <h5 class="modal-title" id="serviceModal3Label">
+            <i class="bi bi-graph-up me-2"></i>Asesoría Fiscal
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <h5 class="text-danger fw-bold mb-3">¿Qué incluye este servicio?</h5>
+            <ul class="list-unstyled">
+              <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Planeación tributaria estratégica</li>
+              <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Optimización de la carga fiscal</li>
+              <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Análisis de estructura fiscal de tu empresa
+              </li>
+              <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Asesoría en temas fiscales y tributarios</li>
+              <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Revisión de esquemas de inversión</li>
+              <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Capacitación en temas fiscales</li>
+            </ul>
+          </div>
+          <div class="mb-3">
+            <h5 class="text-danger fw-bold mb-3">Beneficios</h5>
+            <p class="text-secondary">Maximiza tu eficiencia fiscal y minimiza tu carga tributaria mediante estrategias
+              legales y éticas de planeación fiscal.</p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-danger btn-solicitar-info" data-service="Nóminas y Personal"
+            data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#contactModal">Solicitar información</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal para Servicio 4: Nóminas y Personal -->
+  <div class="modal fade" id="serviceModal4" tabindex="-1" aria-labelledby="serviceModal4Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-danger text-white">
+          <h5 class="modal-title" id="serviceModal4Label">
+            <i class="bi bi-people me-2"></i>Nóminas y Personal
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <h5 class="text-danger fw-bold mb-3">¿Qué incluye este servicio?</h5>
+            <ul class="list-unstyled">
+              <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Cálculo y elaboración de nóminas semanales,
+                quincenales y mensuales</li>
+              <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Cálculo de prestaciones de ley (aguinaldo,
+                vacaciones, prima vacacional)</li>
+              <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Gestión de altas y bajas ante el IMSS</li>
+              <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Pago de cuotas obrero-patronales al IMSS</li>
+              <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Elaboración de recibos de nómina</li>
+              <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Cumplimiento de obligaciones laborales y
+                fiscales</li>
+            </ul>
+          </div>
+          <div class="mb-3">
+            <h5 class="text-danger fw-bold mb-3">Beneficios</h5>
+            <p class="text-secondary">Administra eficientemente la nómina de tus empleados y cumple con todas las
+              obligaciones laborales y de seguridad social.</p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-danger btn-solicitar-info" data-service="Gestión SAT e IMSS"
+            data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#contactModal">Solicitar información</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal para Servicio 5: Gestión SAT e IMSS -->
+  <div class="modal fade" id="serviceModal5" tabindex="-1" aria-labelledby="serviceModal5Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-danger text-white">
+          <h5 class="modal-title" id="serviceModal5Label">
+            <i class="bi bi-building me-2"></i>Gestión SAT e IMSS
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <h5 class="text-danger fw-bold mb-3">¿Qué incluye este servicio?</h5>
+            <ul class="list-unstyled">
+              <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Representación ante el SAT y IMSS</li>
+              <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Trámites de inscripción y actualización de
+                datos</li>
+              <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Atención de requerimientos y avisos fiscales
+              </li>
+              <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Gestión de certificados y constancias</li>
+              <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Resolución de discrepancias con las
+                autoridades</li>
+              <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Acompañamiento en auditorías y visitas
+                domiciliarias</li>
+            </ul>
+          </div>
+          <div class="mb-3">
+            <h5 class="text-danger fw-bold mb-3">Beneficios</h5>
+            <p class="text-secondary">Ahorra tiempo y evita complicaciones gestionando todos tus trámites fiscales y de
+              seguridad social de manera profesional.</p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-danger btn-solicitar-info" data-service="Auditoría y Control"
+            data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#contactModal">Solicitar información</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal para Servicio 6: Auditoría y Control -->
+  <div class="modal fade" id="serviceModal6" tabindex="-1" aria-labelledby="serviceModal6Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-danger text-white">
+          <h5 class="modal-title" id="serviceModal6Label">
+            <i class="bi bi-shield-check me-2"></i>Auditoría y Control
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <h5 class="text-danger fw-bold mb-3">¿Qué incluye este servicio?</h5>
+            <ul class="list-unstyled">
+              <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Auditorías internas de procesos contables</li>
+              <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Revisión de controles internos</li>
+              <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Detección de inconsistencias y errores</li>
+              <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Implementación de sistemas de control</li>
+              <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Recomendaciones para mejoras operativas</li>
+              <li><i class="bi bi-check-circle-fill text-danger me-2"></i>Reportes de seguimiento y cumplimiento</li>
+            </ul>
+          </div>
+          <div class="mb-3">
+            <h5 class="text-danger fw-bold mb-3">Beneficios</h5>
+            <p class="text-secondary">Identifica áreas de mejora en tus procesos contables y garantiza la integridad de
+              tu información financiera.</p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-danger btn-solicitar-info" data-service="Contabilidad General"
+            data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#contactModal">Solicitar información</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Redes Sociales -->
+  <section id="redes-sociales" class="py-5 bg-white">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="text-danger fw-bold display-4">Contáctanos</h2>
+        <p class="text-secondary lead">Estamos aquí para ayudarte</p>
+      </div>
+
+      <!-- WhatsApp Section with Red and White Design -->
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-10">
+          <div class="position-relative overflow-hidden rounded-4 shadow-lg">
+            <!-- WhatsApp Background with gradient -->
+            <div class="whatsapp-bg"
+              style="background: linear-gradient(135deg, #dc3545 0%, #c82333 50%, #ffffff 50%, #f8f9fa 100%); padding: 60px 40px;">
+              <div class="row align-items-center">
+                <!-- QR Code Section -->
+                <div class="col-md-5 text-center mb-4 mb-md-0 whatsapp-qr-container">
+                  <h4 class="text-white fw-bold mb-3 whatsapp-title">¿Prefieres WhatsApp?</h4>
+                  <div class="d-inline-block bg-white p-4 rounded-3 shadow" style="max-width: 220px;">
+                    <img src="img/whatsapp-qr.png" alt="Código QR WhatsApp" class="img-fluid" style="max-width: 180px;">
+                  </div>
+                </div>
+
+                <!-- Button Section -->
+                <div class="col-md-7 text-center text-md-start">
+                  <div class="bg-white p-4 rounded-3 d-inline-block whatsapp-btn-container">
+                    <a href="https://wa.me/528131006167"
+                      class="btn btn-outline-danger btn-lg px-4 py-3 border-2 fw-bold whatsapp-btn" target="_blank"
+                      style="white-space: nowrap;">
+                      <i class="bi bi-whatsapp me-2" style="font-size: 1.3rem;"></i>
+                      CHATEAR POR WHATSAPP
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Facebook Section -->
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-xl-7">
+          <div class="text-center mb-4">
+            <h3 class="text-danger fw-bold">Síguenos en Facebook</h3>
+            <p class="text-secondary">Última publicación</p>
+          </div>
+
+          <!-- Facebook Post Preview -->
+          <div class="bg-white border rounded-3 shadow-sm overflow-hidden">
+            <!-- Post Header -->
+            <div class="p-3 border-bottom">
+              <div class="d-flex align-items-center">
+                <div class="flex-shrink-0">
+                  <img src="img/Logo.png?v=4" alt="Logo" class="rounded-circle"
+                    style="width: 50px; height: 50px; object-fit: cover;">
+                </div>
+                <div class="flex-grow-1 ms-3">
+                  <h6 class="mb-0 fw-bold">Soporte OSME</h6>
+                  <p class="text-muted small mb-0">
+                    <span>2h</span> ·
+                    <span><i class="bi bi-globe"></i></span>
+                  </p>
+                </div>
+                <div class="text-end">
+                  <button class="btn btn-sm"><i class="bi bi-three-dots text-muted"></i></button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Post Content -->
+            <div class="p-3">
+              <p class="mb-3">
+                📊 <strong>Consejo del día:</strong> ¿Sabías que llevar un registro contable organizado te ayuda a tomar
+                mejores decisiones financieras para tu negocio? 📈
+              </p>
+              <p class="mb-3">
+                En Soporte OSME, te ayudamos a mantener tus finanzas en orden y cumplir con todas tus obligaciones
+                fiscales. ¡Contáctanos hoy! 💼
+              </p>
+
+              <!-- Post Image Preview -->
+              <div class="mb-3"
+                style="background: linear-gradient(135deg, #dc3545 0%, #c82333 100%); height: 300px; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+                <div class="text-center text-white p-4">
+                  <i class="bi bi-graph-up" style="font-size: 4rem; opacity: 0.3;"></i>
+                  <p class="mb-0 fw-bold" style="font-size: 1.5rem;">Contabilidad Profesional</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Post Interactions -->
+            <div class="px-3 py-2 border-top bg-light">
+              <div class="d-flex justify-content-around text-muted small">
+                <div><i class="bi bi-hand-thumbs-up text-primary"></i> 45</div>
+                <div><i class="bi bi-chat-dots"></i> 12</div>
+                <div><i class="bi bi-share"></i> 8</div>
+              </div>
+            </div>
+
+            <!-- Post Actions -->
+            <div class="p-2 border-top">
+              <div class="d-flex justify-content-around">
+                <button class="btn btn-sm text-muted w-100 border-0">
+                  <i class="bi bi-hand-thumbs-up me-2"></i>Me gusta
+                </button>
+                <button class="btn btn-sm text-muted w-100 border-0">
+                  <i class="bi bi-chat-dots me-2"></i>Comentar
+                </button>
+                <button class="btn btn-sm text-muted w-100 border-0">
+                  <i class="bi bi-share me-2"></i>Compartir
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA Button -->
+          <div class="text-center mt-4">
+            <a href="https://www.facebook.com/Saul97OSME" class="btn btn-primary btn-lg px-5" target="_blank">
+              <i class="bi bi-facebook me-2"></i>
+              Ver página de Facebook
+            </a>
+            <p class="text-muted mt-3 mb-0">Envíanos un mensaje</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-danger text-white py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="fw-bold mb-3">Soporte OSME</h5>
+          <p class="mb-2">Despacho de contaduría profesional con más de 10 años de experiencia.</p>
+          <p class="mb-2">
+            <i class="bi bi-geo-alt-fill me-2"></i>Santa Catarina, Nuevo León, México
+          </p>
+          <p class="mb-2">
+            <i class="bi bi-envelope-fill me-2"></i>soporteosmecp@gmail.com
+          </p>
+          <p class="mb-0">
+            <i class="bi bi-whatsapp me-2"></i>81 3100 6167
+          </p>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="fw-bold mb-3">Enlaces Rápidos</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="#nosotros" class="text-white text-decoration-none">
+                <i class="bi bi-chevron-right me-1"></i>Quiénes somos
+              </a>
+            </li>
+            <li class="mb-2">
+              <a href="#servicios" class="text-white text-decoration-none">
+                <i class="bi bi-chevron-right me-1"></i>Nuestros servicios
+              </a>
+            </li>
+            <li class="mb-2">
+              <a href="#clientes" class="text-white text-decoration-none">
+                <i class="bi bi-chevron-right me-1"></i>Clientes que confían
+              </a>
+            </li>
+            <li class="mb-2">
+              <a href="terminos" class="text-white text-decoration-none">
+                <i class="bi bi-chevron-right me-1"></i>Términos y Condiciones
+              </a>
+            </li>
+            <li class="mb-2">
+              <a href="privacidad" class="text-white text-decoration-none">
+                <i class="bi bi-chevron-right me-1"></i>Aviso de Privacidad
+              </a>
+            </li>
+            <li class="mb-2">
+              <a href="cookies" class="text-white text-decoration-none">
+                <i class="bi bi-chevron-right me-1"></i>Política de Cookies
+              </a>
+            </li>
+            <li class="mb-2">
+              <a href="legal" class="text-white text-decoration-none">
+                <i class="bi bi-chevron-right me-1"></i>Aviso Legal
+              </a>
+            </li>
+            <li class="mb-2">
+              <a href="inicio" class="text-white text-decoration-none">
+                <i class="bi bi-chevron-right me-1"></i>Inicio
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <h5 class="fw-bold mb-3">Síguenos</h5>
+          <p class="mb-3">Conecta con nosotros en redes sociales</p>
+          <div class="d-flex gap-3">
+            <a href="https://www.facebook.com/Saul97OSME" target="_blank" class="text-white" style="font-size: 1.5rem;">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://wa.me/528131006167" target="_blank" class="text-white" style="font-size: 1.5rem;">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-4" style="border-color: rgba(255,255,255,0.2);">
+
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="mb-0">© 2026 Soporte OSME. Todos los derechos reservados.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <p class="mb-0">Desarrollado con <a href="login.html"
+              class="text-warning text-decoration-none footer-heart-trigger" aria-label="Iniciar sesión"><i
+                class="bi bi-heart-fill"></i></a> para nuestros clientes</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Contact Modal -->
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header bg-danger text-white">
+          <h5 class="modal-title" id="contactModalLabel">
+            <i class="bi bi-envelope-fill me-2"></i>Contáctanos
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <!-- Contact Form -->
+          <h5 class="text-danger fw-bold mb-3 text-center">Envíanos un mensaje</h5>
+          <form id="modalContactForm">
+            <!-- Hidden field to track service interest -->
+            <input type="hidden" id="serviceOfInterest" name="serviceOfInterest" value="">
+
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="contactName" class="form-label fw-bold">Nombre Completo</label>
+                <div class="input-group">
+                  <span class="input-group-text bg-light border-end-0"><i class="bi bi-person text-danger"></i></span>
+                  <input type="text" class="form-control border-start-0 ps-0" id="contactName" required>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="contactPhone" class="form-label fw-bold">Teléfono</label>
+                <div class="input-group">
+                  <span class="input-group-text bg-light border-end-0"><i class="bi bi-whatsapp text-danger"></i></span>
+                  <input type="tel" class="form-control border-start-0 ps-0" id="contactPhone" required>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="contactEmail" class="form-label fw-bold">Correo Electrónico</label>
+              <div class="input-group">
+                <span class="input-group-text bg-light border-end-0"><i class="bi bi-envelope text-danger"></i></span>
+                <input type="email" class="form-control border-start-0 ps-0" id="contactEmail" required>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="contactMessage" class="form-label fw-bold">Mensaje</label>
+              <div class="input-group">
+                <span class="input-group-text bg-light border-end-0 align-items-start pt-2"><i
+                    class="bi bi-chat-text text-danger"></i></span>
+                <textarea class="form-control border-start-0 ps-0" id="contactMessage" rows="4" required
+                  placeholder="Escribe tu consulta aquí..."></textarea>
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="contactConsent" required>
+                <label class="form-check-label small text-secondary" for="contactConsent">
+                  He leído y acepto el <a href="privacidad" target="_blank"
+                    class="text-danger text-decoration-none">Aviso de Privacidad</a> y consiento el tratamiento de mis
+                  datos para ser contactado.
+                </label>
+              </div>
+            </div>
+
+            <div class="text-center d-grid">
+              <button type="submit" class="btn btn-danger btn-lg">
+                <i class="bi bi-send-fill me-2"></i>Enviar Mensaje
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  </form>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/smooth-scroll.js"></script>
+  <script src="js/modal-contact.js"></script>
+  <script src="js/speech-bubble.js"></script>
+</body>
+
+</html>

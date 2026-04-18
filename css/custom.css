@@ -1,0 +1,1113 @@
+/* Variables de colores */
+:root {
+  --primary-red: #dc3545;
+  --light-red: #f8d7da;
+  --gray-light: #f8f9fa;
+  --gray-medium: #6c757d;
+  --gray-dark: #495057;
+  --white: #ffffff;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos generales */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  color: var(--gray-dark);
+  background-color: var(--white);
+}
+
+/* Hero Section */
+.hero-section {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--white) 0%, var(--gray-light) 100%);
+  padding-top: 80px;
+}
+
+.hero-section img {
+  box-shadow: 0 10px 30px var(--shadow);
+  transition: transform 0.3s ease;
+}
+
+.hero-section img:hover {
+  transform: scale(1.05);
+}
+
+/* Navbar */
+.navbar {
+  backdrop-filter: blur(10px);
+  background-color: var(--primary-red) !important;
+  transition: all 0.3s ease;
+}
+
+.navbar .navbar-toggler {
+  border-color: white;
+}
+
+.navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-brand img {
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover img {
+  transform: scale(1.1);
+}
+
+.nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--primary-red);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Secciones */
+section {
+  padding: 80px 0;
+}
+
+/* Service Cards */
+.service-card {
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px var(--shadow) !important;
+  border-color: var(--light-red);
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+  transform: scale(1.1) !important;
+  background-color: var(--primary-red) !important;
+}
+
+.service-card:hover .service-icon i {
+  color: white !important;
+}
+
+/* Formulario de contacto */
+.form-control {
+  border-radius: 8px;
+  padding: 12px 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px var(--shadow);
+}
+
+.form-control:focus {
+  box-shadow: 0 4px 12px var(--shadow);
+  border-color: var(--primary-red);
+}
+
+.form-control.is-invalid {
+  border-color: var(--primary-red);
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+/* Botones */
+.btn {
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-transform: none;
+}
+
+.btn-danger {
+  background-color: var(--primary-red);
+  border-color: var(--primary-red);
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(220, 53, 69, 0.3);
+}
+
+/* Alertas */
+.alert {
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Scroll suave */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 80vh;
+    padding-top: 60px;
+  }
+
+  section {
+    padding: 60px 0;
+  }
+
+  .service-card {
+    margin-bottom: 20px;
+  }
+}
+
+/* Estilos para el loading spinner */
+.spinner-border-sm {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Estilos para los checkmarks */
+.bi-check-circle-fill {
+  font-size: 1.2rem;
+}
+
+/* Estilos para el footer */
+footer {
+  background: linear-gradient(135deg, var(--primary-red) 0%, #c82333 100%);
+}
+
+/* Estilos para el texto de error */
+.text-danger.small {
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+/* Estilos para las tarjetas de misión */
+.bg-light {
+  background-color: var(--gray-light) !important;
+}
+
+/* Estilos para los iconos de servicios */
+.service-icon i {
+  background: linear-gradient(135deg, var(--primary-red), #c82333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Estilos para el hover de los enlaces */
+a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--primary-red) !important;
+}
+
+/* Estilos para el focus de los elementos */
+.form-control:focus,
+.btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+/* Estilos para el navbar en scroll */
+.navbar.scrolled {
+  background-color: var(--primary-red) !important;
+  box-shadow: 0 2px 10px var(--shadow);
+}
+
+/* Spacer for fixed navbar on non-home pages */
+.page-header-spacer {
+  padding-top: 100px;
+}
+
+@media (max-width: 768px) {
+  .page-header-spacer {
+    padding-top: 80px;
+  }
+}
+
+::placeholder {
+  color: var(--gray-medium) !important;
+  opacity: 0.7;
+}
+
+/* Estilos para la selección de texto */
+::selection {
+  background-color: var(--light-red);
+  color: var(--gray-dark);
+}
+
+/* Estilos para enlaces activos en navegación */
+.nav-link {
+  color: white !important;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.nav-link.active {
+  color: white !important;
+  font-weight: 600;
+}
+
+.nav-link.active::after {
+  width: 100%;
+  background-color: white !important;
+}
+
+/* Estilos para mejorar la accesibilidad */
+.btn:focus,
+.form-control:focus {
+  outline: 2px solid var(--primary-red);
+  outline-offset: 2px;
+}
+
+/* Estilos para el estado de carga */
+.btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Estilos para las animaciones de entrada */
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Estilos para mejorar la legibilidad */
+.text-secondary {
+  color: var(--gray-medium) !important;
+}
+
+/* Estilos para los iconos en las tarjetas de servicios */
+.service-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, var(--light-red), #f8d7da);
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.service-icon i {
+  font-size: 1.5rem;
+  color: var(--primary-red);
+  transition: color 0.3s ease;
+}
+
+/* Estilos para mejorar el espaciado */
+.lead {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+/* Estilos para el footer */
+footer {
+  margin-top: 0;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 576px) {
+  .hero-section {
+    padding-top: 40px;
+    min-height: 70vh;
+  }
+
+  .display-4 {
+    font-size: 2.5rem;
+  }
+
+  .service-card {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Estilos para las tarjetas de redes sociales */
+.social-card {
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.social-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px var(--shadow) !important;
+  border-color: var(--light-red);
+  text-decoration: none;
+}
+
+.social-icon {
+  font-size: 1.5rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--gray-light);
+  transition: all 0.3s ease;
+}
+
+.social-card:hover .social-icon {
+  transform: scale(1.1);
+}
+
+/* Estilos para el contenedor del QR */
+.qr-container {
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.qr-container:hover {
+  border-color: var(--primary-red);
+  transform: scale(1.02);
+}
+
+/* Estilos para la imagen del QR */
+.qr-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Estilos para el botón de WhatsApp */
+.btn-success {
+  background-color: #25d366;
+  border-color: #25d366;
+  transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #128c7e;
+  border-color: #128c7e;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+}
+
+/* Estilos para los iconos de redes sociales */
+.bi-facebook {
+  color: #1877f2 !important;
+}
+
+.bi-instagram {
+  color: #e4405f !important;
+}
+
+.bi-linkedin {
+  color: #0077b5 !important;
+}
+
+.bi-youtube {
+  color: #ff0000 !important;
+}
+
+.bi-whatsapp {
+  color: #25d366 !important;
+}
+
+/* Estilos para mejorar la responsividad de las tarjetas sociales */
+@media (max-width: 768px) {
+  .social-card {
+    margin-bottom: 1rem;
+  }
+
+  .qr-container {
+    max-width: 150px !important;
+    padding: 1rem !important;
+  }
+
+  .qr-container img {
+    max-width: 120px !important;
+    height: auto !important;
+  }
+}
+
+/* Estilos específicos para dispositivos móviles pequeños */
+@media (max-width: 576px) {
+  .qr-container {
+    max-width: 120px !important;
+    padding: 0.75rem !important;
+  }
+
+  .qr-container img {
+    max-width: 100px !important;
+    height: auto !important;
+  }
+
+  .bg-light.p-5 {
+    padding: 1.5rem !important;
+  }
+}
+
+/* Estilos para dispositivos muy pequeños */
+@media (max-width: 480px) {
+  .qr-container {
+    max-width: 100px !important;
+    padding: 0.5rem !important;
+  }
+
+  .qr-container img {
+    max-width: 80px !important;
+    height: auto !important;
+  }
+
+  .bg-light.p-5 {
+    padding: 1rem !important;
+  }
+}
+
+/* Estilos para las tarjetas de clientes estrella */
+.client-card {
+  transition: all 0.3s ease;
+}
+
+.client-card:hover {
+  transform: translateY(-5px);
+  text-decoration: none;
+}
+
+.client-card .bg-light {
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.client-card:hover .bg-light {
+  box-shadow: 0 15px 35px var(--shadow) !important;
+  border-color: var(--light-red);
+  background-color: var(--white) !important;
+}
+
+.client-logo img {
+  transition: all 0.3s ease;
+  filter: grayscale(100%);
+}
+
+.client-card:hover .client-logo img {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+.client-card h6 {
+  transition: color 0.3s ease;
+}
+
+.client-card:hover h6 {
+  color: var(--primary-red) !important;
+}
+
+/* Estilos para el hover-shadow */
+.hover-shadow {
+  transition: all 0.3s ease;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 15px 35px var(--shadow) !important;
+}
+
+/* Estilos responsivos para las tarjetas de clientes */
+@media (max-width: 768px) {
+  .client-card {
+    margin-bottom: 1rem;
+  }
+
+  .client-logo img {
+    max-width: 60px !important;
+  }
+}
+
+/* Estilos para el icono grande de Facebook */
+.social-icon-large {
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-radius: 50%;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+}
+
+.social-icon-large:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #1877f2, #0d6efd);
+}
+
+.social-icon-large:hover i {
+  color: white !important;
+}
+
+/* Estilos para los botones de contacto */
+.btn-primary {
+  background-color: #1877f2;
+  border-color: #1877f2;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(24, 119, 242, 0.3);
+}
+
+.btn-success {
+  background-color: #25d366;
+  border-color: #25d366;
+  transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #128c7e;
+  border-color: #128c7e;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+}
+
+/* Estilos responsivos para la sección de contacto */
+@media (max-width: 768px) {
+  .social-icon-large {
+    width: 100px;
+    height: 100px;
+    font-size: 3rem;
+  }
+}
+
+/* Speech Bubble Styles - Thought Bubble Design */
+.service-tooltip {
+  position: relative;
+  display: inline-block;
+  animation: fadeInBounce 1s ease-out;
+}
+
+@keyframes fadeInBounce {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.8);
+  }
+
+  60% {
+    transform: translateY(5px) scale(1.05);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.speech-bubble-content {
+  background: white;
+  color: #dc3545;
+  padding: 25px 35px;
+  border: 3px solid #dc3545;
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(220, 53, 69, 0.2);
+  position: relative;
+  text-align: center;
+  min-width: 280px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.speech-bubble-content:hover {
+  background: #dc3545;
+  color: white;
+}
+
+.speech-bubble-content:hover p {
+  color: white;
+}
+
+.speech-bubble-content:hover i {
+  color: white !important;
+}
+
+.speech-bubble-content p {
+  color: #dc3545;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+/* Thought bubble tail - three circular elements */
+.speech-bubble-arrow {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.speech-bubble-content:hover~.speech-bubble-arrow::before,
+.speech-bubble-content:hover~.speech-bubble-arrow::after {
+  background: #dc3545;
+}
+
+.speech-bubble-arrow::before,
+.speech-bubble-arrow::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #dc3545;
+  background: white;
+  transition: background 0.3s ease;
+}
+
+.speech-bubble-arrow::before {
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 5px;
+}
+
+.speech-bubble-arrow::after {
+  width: 15px;
+  height: 15px;
+  left: 50%;
+  transform: translateX(-100%);
+  top: 20px;
+}
+
+.speech-close-btn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  background: rgba(220, 53, 69, 0.1);
+  border: 2px solid #dc3545;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  color: #dc3545;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  line-height: 1;
+}
+
+.speech-close-btn:hover {
+  background: #dc3545;
+  color: white;
+  transform: rotate(90deg);
+}
+
+/* WhatsApp Chat Button Hover Effect */
+.btn-outline-danger:hover {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  color: white !important;
+}
+
+.btn-outline-danger:hover * {
+  color: white !important;
+}
+
+@media (max-width: 768px) {
+  .speech-bubble-content {
+    min-width: 240px;
+    padding: 20px 30px;
+  }
+
+  .speech-bubble-content p {
+    font-size: 1rem;
+  }
+}
+
+/* Estilos para las pestañas de autenticación */
+.nav-pills .nav-link {
+  color: var(--gray-medium);
+  transition: all 0.3s ease;
+}
+
+.nav-pills .nav-link:hover {
+  color: var(--primary-red);
+  background-color: rgba(220, 53, 69, 0.05);
+}
+
+/* --- Sliding Login/Register Animation Styles --- */
+
+.auth-body {
+  background: #f6f5f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+  margin: -20px 0 50px;
+}
+
+.auth-body h1 {
+  font-weight: bold;
+  margin: 0;
+}
+
+.auth-body h2 {
+  text-align: center;
+}
+
+.auth-body p {
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  margin: 20px 0 30px;
+}
+
+.auth-body span {
+  font-size: 12px;
+}
+
+.auth-body a {
+  color: #333;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 15px 0;
+}
+
+.auth-body button {
+  border-radius: 20px;
+  border: 1px solid #dc3545;
+  background-color: #dc3545;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  margin-top: 10px;
+}
+
+.auth-body button:active {
+  transform: scale(0.95);
+}
+
+.auth-body button:focus {
+  outline: none;
+}
+
+.auth-body button.ghost {
+  background-color: transparent;
+  border-color: #FFFFFF;
+}
+
+.auth-body form {
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 50px;
+  height: 100%;
+  text-align: center;
+}
+
+.auth-body input {
+  background-color: #eee;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+}
+
+.auth-body .container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+  position: relative;
+  overflow: hidden;
+  width: 768px;
+  max-width: 100%;
+  min-height: 520px;
+  /* Increased height for content */
+}
+
+/* Ensure bootstrap container doesn't conflict too much */
+.auth-body .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.form-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
+}
+
+.sign-in-container {
+  left: 0;
+  width: 50%;
+  z-index: 2;
+}
+
+.container.right-panel-active .sign-in-container {
+  transform: translateX(100%);
+}
+
+.sign-up-container {
+  left: 0;
+  width: 50%;
+  opacity: 0;
+  z-index: 1;
+}
+
+.container.right-panel-active .sign-up-container {
+  transform: translateX(100%);
+  opacity: 1;
+  z-index: 5;
+  animation: show 0.6s;
+}
+
+@keyframes show {
+
+  0%,
+  49.99% {
+    opacity: 0;
+    z-index: 1;
+  }
+
+  50%,
+  100% {
+    opacity: 1;
+    z-index: 5;
+  }
+}
+
+.overlay-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.6s ease-in-out;
+  z-index: 100;
+}
+
+.container.right-panel-active .overlay-container {
+  transform: translateX(-100%);
+}
+
+.overlay {
+  background: #dc3545;
+  background: -webkit-linear-gradient(to right, #ff4b2b, #dc3545);
+  background: linear-gradient(to right, #ff4b2b, #dc3545);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  color: #FFFFFF;
+  position: relative;
+  left: -100%;
+  height: 100%;
+  width: 200%;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+}
+
+.container.right-panel-active .overlay {
+  transform: translateX(50%);
+}
+
+.overlay-panel {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+}
+
+.overlay-left {
+  transform: translateX(-20%);
+}
+
+.container.right-panel-active .overlay-left {
+  transform: translateX(0);
+}
+
+.overlay-right {
+  right: 0;
+  transform: translateX(0);
+}
+
+.container.right-panel-active .overlay-right {
+  transform: translateX(20%);
+}
+
+.social-container {
+  margin: 20px 0;
+}
+
+.social-container a {
+  border: 1px solid #DDDDDD;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  height: 40px;
+  width: 40px;
+}
+
+/* Mobile Responsiveness for Sliding Panel */
+@media (max-width: 768px) {
+  .auth-body {
+    height: auto;
+    padding: 20px;
+  }
+
+  .auth-body .container {
+    width: 100%;
+    min-height: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-container,
+  .overlay-container,
+  .sign-in-container,
+  .sign-up-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    transform: none !important;
+    left: auto;
+    top: auto;
+    opacity: 1;
+    z-index: 1;
+  }
+
+  .overlay-container {
+    display: none;
+    /* Hide overlay on mobile users usually prefer simple stacking */
+  }
+
+  .sign-up-container {
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+  }
+}
+
+/* Ajustes para la sección de WhatsApp en móviles */
+@media (max-width: 768px) {
+
+  /* Fondo sólido para móvil en lugar del degradado dividido */
+  .whatsapp-bg {
+    background: linear-gradient(135deg, #dc3545 0%, #c82333 100%) !important;
+    padding: 40px 20px !important;
+    text-align: center;
+  }
+
+  /* Ocultar contenedor del QR en móvil */
+  .whatsapp-qr-container {
+    display: none !important;
+  }
+
+  /* Ajustar texto del título en móvil */
+  .whatsapp-title {
+    color: white !important;
+    margin-bottom: 2rem !important;
+  }
+
+  /* Contenedor del botón en móvil */
+  .whatsapp-btn-container {
+    text-align: center !important;
+    width: 100%;
+  }
+
+  /* Botón de WhatsApp en móvil */
+  .whatsapp-btn {
+    white-space: normal !important;
+    /* Permitir salto de línea */
+    width: 100%;
+    background-color: white !important;
+    color: #dc3545 !important;
+    border: none !important;
+  }
+
+  .whatsapp-btn:hover {
+    background-color: #f8f9fa !important;
+  }
+
+  /* Ajustes Hero Section en móvil */
+  .hero-section .display-4 {
+    font-size: 2.2rem;
+    /* Reducir tamaño de título */
+  }
+
+  .hero-section img.mb-4 {
+    width: 100px;
+    /* Reducir ligeramente el logo */
+  }
+
+  .hero-section .lead {
+    font-size: 1rem;
+  }
+}
